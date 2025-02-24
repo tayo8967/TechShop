@@ -1,0 +1,36 @@
+.hero {
+    padding: 4rem 0;
+    background-color: #f8f9fa;
+  
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      color: #333;
+    }
+  
+    p {
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+      color: #555;
+    }
+  
+    .btn-primary {
+      background-color: #FF6D00;
+      border: none;
+      &:hover {
+        background-color: darken(#FF6D00, 10%);
+      }
+    }
+  
+    img {
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+  
+    /* Custom spacing for small screens */
+    @media (max-width: 767.98px) {
+      .col-md-6 {
+        margin-bottom: 2rem; /* Add more space between text and image */
+      }
+    }
+  }

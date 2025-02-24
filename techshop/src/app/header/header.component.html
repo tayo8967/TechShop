@@ -1,0 +1,45 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid justify-content-center">
+      <!-- Toggle Button for Mobile -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <!-- Navbar Links -->
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <!-- Logo -->
+        <a class="navbar-brand mx-3" href="#">
+          <img src="assets/img/logo.png" alt="TechShop Logo" height="40">TechShop
+        </a>
+  
+        <!-- Navigation Links -->
+        <ul class="navbar-nav mx-3">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Categories</a>
+          </li>
+        </ul>
+  
+        <!-- Search Bar (Without Button) -->
+        <form class="d-flex mx-3">
+          <input class="form-control" type="search" placeholder="Search products..." aria-label="Search">
+        </form>
+  
+        <!-- Cart and Login Icons -->
+        <ul class="navbar-nav mx-3">
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Cart">
+                <fa-icon [icon]="['fas', 'shopping-cart']"></fa-icon>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Login">
+                <fa-icon [icon]="['fas', 'user']"></fa-icon>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>

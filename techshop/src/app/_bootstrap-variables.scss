@@ -1,0 +1,24 @@
+// Override Bootstrap variables
+$primary: #1A73E8;
+$secondary: #00B0FF;
+$success: #28a745;
+$danger: #dc3545;
+$warning: #FF6D00;
+$info: #17a2b8;
+$light: #F5F5F5;
+$dark: #333333;
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+a {
+    color: $primary;
+    &:hover {
+      color: darken($primary, 10%);
+    }
+}
+
+// Import Bootstrap SCSS
+@import '../../node_modules/bootstrap/';

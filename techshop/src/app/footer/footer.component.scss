@@ -1,0 +1,21 @@
+footer {
+    background-color: #1A73E8;
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+  
+    a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1rem;
+  
+      &:hover {
+        color: darken(white, 10%);
+      }
+    }
+  
+    .social-media a {
+      font-size: 1.5rem;
+      margin: 0 0.5rem;
+    }
+}
