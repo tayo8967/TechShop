@@ -1,46 +1,82 @@
 .navbar {
-    background-color: #1A73E8;
-  
-    .navbar-brand img {
-      height: 40px;
-    }
-  
-    .navbar-nav {
-      .nav-link {
-        color: white !important;
-        &:hover {
-          color: darken(white, 10%) !important;
-        }
+  background-color: #1A73E8;
+
+  .navbar-brand img {
+    height: 40px;
+  }
+
+  .navbar-nav {
+    .nav-link {
+      color: white !important;
+      &:hover {
+        color: darken(white, 10%) !important;
       }
     }
-  
-    .form-control {
-      border-radius: 4px;
-      border: none; // Remove default border
-      box-shadow: none; // Remove default shadow
-    }
-  
-    /* Center everything in the navbar */
-    .container-fluid {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-  
-    /* Adjust spacing between items */
-    .navbar-nav.mx-3,
-    .d-flex.mx-3 {
+  }
+
+  .form-control {
+    border-radius: 4px;
+    border: none;
+    box-shadow: none;
+  }
+
+  /* Center everything in the navbar */
+  .container-fluid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Adjust spacing between items */
+  .d-flex.mx-3 {
+    margin-left: 20rem !important;
+    margin-right: 1rem !important;
+
+    @media (max-width: 991px) {
       margin-left: 1rem !important;
       margin-right: 1rem !important;
     }
-  
-    /* Adjust icon size */
-    fa-icon {
-      font-size: 1.25rem;
+  }
+
+  .navbar-nav.mx-3 {
+    margin-left: 1rem !important;
+    margin-right: 1rem !important;
+  }
+
+  /* Adjust icon size */
+  fa-icon {
+    font-size: 1.25rem;
+  }
+
+  /* Hide the search button */
+  .btn-outline-light {
+    display: none;
+  }
+
+  /* Grid layout for dropdown */
+  .dropdown-menu-grid {
+    width: 600px; /* Adjust width as needed */
+    left: 50% !important; /* Center horizontally */
+    transform: translateX(-50%) !important; /* Adjust for exact centering */
+    padding: 1rem;
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      .col-md-4 {
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+      }
     }
-  
-    /* Hide the search button */
-    .btn-outline-light {
-      display: none;
+
+    @media (max-width: 991px) {
+      position: absolute; /* Position the dropdown absolutely */
+      top: 100%; /* Position it below the navbar */
+      left: 0; /* Align it to the left */
+      width: 100%; /* Make it full width */
+      z-index: 1000; /* Ensure it appears above other elements */
+      border: none; /* Remove default border */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
     }
   }
+}
+

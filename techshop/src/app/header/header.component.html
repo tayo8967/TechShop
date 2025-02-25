@@ -17,8 +17,39 @@
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Categories</a>
+          <li class="nav-item dropdown" appDropdownHover>
+            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Categories
+            </a>
+            <ul class="dropdown-menu dropdown-menu-grid" aria-labelledby="navbarDropdown">
+              <div class="row">
+                <div class="col-md-4">
+                  <li><a class="dropdown-item" href="#"><fa-icon [icon]="['fas', 'mobile']"></fa-icon> Smartphones</a></li>
+                  <li><a class="dropdown-item" href="#"><fa-icon [icon]="['fas', 'laptop']"></fa-icon> Laptops</a></li>
+                  <li><a class="dropdown-item" href="#"><fa-icon [icon]="['fas', 'tablet']"></fa-icon> Tablets</a></li>
+                </div>
+                <div class="col-md-4">
+                  <li><a class="dropdown-item" href="#"><fa-icon [icon]="['fas', 'clock']"></fa-icon> Wearables</a></li>
+                  <li><a class="dropdown-item" href="#"><fa-icon [icon]="['fas', 'headphones']"></fa-icon> Audio</a></li>
+                  <li><a class="dropdown-item" href="#"><fa-icon [icon]="['fas', 'camera']"></fa-icon> Cameras</a></li>
+                </div>
+                <div class="col-md-4">
+                  <li><a class="dropdown-item" href="#"><fa-icon [icon]="['fas', 'gamepad']"></fa-icon> Gaming</a></li>
+                  <li><a class="dropdown-item" href="#"><fa-icon [icon]="['fas', 'home']"></fa-icon> Smart Home</a></li>
+                  <li><a class="dropdown-item" href="#"><fa-icon [icon]="['fas', 'plug']"></fa-icon> Accessories</a></li>
+                </div>
+                <div class="col-md-4">
+                  <li><a class="dropdown-item" href="#"><fa-icon [icon]="['fas', 'tv']"></fa-icon> Monitors</a></li>
+                  <li><a class="dropdown-item" href="#"><fa-icon [icon]="['fas', 'network-wired']"></fa-icon> Networking</a></li>
+                  <li><a class="dropdown-item" href="#"><fa-icon [icon]="['fas', 'hdd']"></fa-icon> Storage</a></li>
+                </div>
+                <div class="col-md-4">
+                  <li><a class="dropdown-item" href="#"><fa-icon [icon]="['fas', 'print']"></fa-icon> Printers & Scanners</a></li>
+                  <li><a class="dropdown-item" href="#"><fa-icon [icon]="['fas', 'microchip']"></fa-icon> Components</a></li>
+                  <li><a class="dropdown-item" href="#"><fa-icon [icon]="['fas', 'compact-disc']"></fa-icon> Software</a></li>
+                </div>
+              </div>
+            </ul>
           </li>
         </ul>
   
