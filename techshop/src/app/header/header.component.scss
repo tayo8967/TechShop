@@ -80,3 +80,58 @@
   }
 }
 
+/* Dropdown styles for small screens */
+@media (max-width: 767.98px) {
+  .navbar-nav .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%; /* Make it full width */
+    z-index: 1000;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 0.5rem;
+  }
+
+  .navbar-nav .dropdown-item {
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    &:hover {
+      background-color: darken(white, 10%);
+    }
+  }
+
+  /* Ensure the dropdown menu stretches to the full width */
+  .dropdown-menu-grid {
+    width: 100%; /* Full width */
+    max-width: 100%; /* Prevent overflow */
+  }
+
+  /* Adjust icon size and spacing */
+  fa-icon {
+    font-size: 1rem;
+    margin-right: 0.5rem;
+  }
+
+  /* Switch to single-column layout */
+  .dropdown-menu-grid .row {
+    flex-direction: column;
+  }
+
+  .dropdown-menu-grid .col-md-4 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+/* Remove padding and margin from the dropdown menu */
+.dropdown-menu {
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+}
+
+/* Ensure the dropdown items take full width */
+.dropdown-item {
+  width: 100%; /* Full width */
+}
